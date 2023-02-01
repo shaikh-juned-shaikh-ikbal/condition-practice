@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h3 id="demo"></h3>
+    <h3 id="demo1"></h3>
+</body>
+<script>
+    // const day = new Date().getDay();
+    /* const day= 9;
+     console.log(day);
+     let weekday;
+     switch (day) {
+         case 0:
+             weekday = 'Sunday';
+             break;
+ 
+         case 1:
+             weekday = 'Monday';
+             break;
+ 
+         case 2:
+             weekday = 'Tuseday';
+             break;
+ 
+         case 3:
+             weekday = 'Wednesday';
+             break;
+ 
+         case 4:
+             weekday = 'Thurusday';
+             break;
+ 
+         case 5:
+             weekday = 'Friday';
+             break;
+ 
+         case 6:
+             weekday = 'saturday';
+             break;
+             default:
+             weekday = "Looking forward to the Weekend";
+             break; 
+     }
+     document.getElementById('demo1').innerHTML = "Today is "+ weekday;*/
+    let key = 6;
+    let value = "";
+
+    switch (key) {
+        case 4:
+        case 5:
+            value = "Looking for weekday!!"
+            break;
+         case 6:
+            value = "opps!!!"
+           break;
+        default:
+            value = 'Enter valid Date!!'
+            break;
+    }
+    document.write(value);
+</script>
+
+</html>
