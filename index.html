@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input  name="" id="inputiD">
+    <button onclick="Myfunlick()">Vote</button>
+    <h3 id="demo"></h3> 
+
+    
+</body>
+<script>
+    // const ageinputElement = document.getElementById("inputiD");
+    // const paraElemetn = document.getElementById("demo")
+    function Myfunlick() {
+        /*  if(parseFloat(ageinputElement.value)>=18){
+              paraElemetn.innerHTML ="Great! your are eligible to vote!";
+          }else{
+              paraElemetn.innerHTML = "opps! your are too young to vote1 ";
+          }*/
+        if (isNaN(ageinputElement.value)) {
+            paraElemetn.innerHTML = "Invalid Input"
+        } else {
+              paraElemetn.innerHTML= Number(ageinputElement.value)>=18
+              ?"Great! you are eligbile to vote!":"opps! you are not eligibile to vote!" 
+        }
+
+        //   paraElemetn.innerHTML= Number(ageinputElement.value)>18
+        //   ?"Great! you are eligbile to vote!":"opps! you are not eligibile to vote!"
+    }
+
+ 
+
+</script>
+
+</html>

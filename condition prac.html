@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input id="inputId" placeholder="Enter you are age!">
+    <button onclick="Myfuntion()">click me </button>
+    <h2 id="demo1"></h2>
+</body>
+<script>
+    const inputValue = document.getElementById("inputId");
+    const innerValue = document.getElementById("demo1");
+
+    function Myfuntion() {
+        if (parseFloat(inputValue.value) >= 18) {
+           innerValue.innerHTML = "you are eligibile to vote!!";
+        } else {
+            innerValue.innerHTML = "opps you are not eligibile to vote !!";
+        }
+    }
+</script>
+
+</html>
