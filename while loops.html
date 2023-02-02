@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2 id="demo"></h2>
+    <h3 id="demo1"></h3>
+</body>
+<script>
+    let i = 0;
+    while(i<5){
+        console.log("shaikh juned",i);
+        i++;
+    }
+
+
+
+    let cars = ['Maruti','Renault','BMW']
+    let text ='';
+    let k = 0;//initialization
+    //condition check
+    while(k<cars.length){
+        text +=cars[k]+"<br>";
+        k++;
+    }
+    document.getElementById("demo1").innerHTML =text;
+
+
+    let name = ["shaikh","juned","shaikh","kbal"];
+    let text1 =' ';
+    for(k=0;k<name.length;k++){
+        text1+=name[k]+"<br>";
+        // document.write("This is my name",name);
+    }
+    document.write(text1)
+
+</script>
+</html>
